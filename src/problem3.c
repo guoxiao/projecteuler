@@ -25,7 +25,7 @@ int main() {
     long n = 600851475143;
     long ret = 0;
     while ((ret = getAFactor(n)) != 1){
-        printf("factor:%d\n", ret);
+        printf("factor:%ld\n", ret);
         n = n / ret;
         if (ret > max) {
             max = ret;
